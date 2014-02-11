@@ -7,20 +7,45 @@
 	</head>
 	<body>
 		<h1>My Favorite Cookies</h1>
-		
+
 		<script>
 			/*
-			 The purpose of this program is to create a list of 
-			 *cookies with specific properties and from that list, 
+			 The purpose of this program is to create a list of
+			 *cookies with specific properties and from that list,
 			 *create two new lists, one of my favorites and one of the rest.
-			 
+
 			 */
-			
-			var myCookies = [{"name": "Oreo", "shape": "round"}, {"name": "Chips Ahoy", "shape": "round"}, {"name": "Lorna Doone", "shape": "square"}, {"name": "Fig Newtons", "shape": "square"}];
-			
+
+			var myCookies = [{
+				"name" : "Oreo",
+				"shape" : "round"
+			}, {
+				"name" : "Chips Ahoy",
+				"shape" : "round"
+			}, {
+				"name" : "Lorna Doone",
+				"shape" : "square"
+			}, {
+				"name" : "Fig Newtons",
+				"shape" : "square"
+			}];
+
 			console.log(myCookies);
 			
+			//these are the lists I will sorty my cookies into			
+		    var myFaves = [];
+			var theRest = [];
+
+            /*For every item in my list, check its shape.
+			*If it's round, add to Faves; otherwise add to theRest
+			*/
 			
+			for (var i=0; i<4; i++){
+				console.log(i);
+				var currentCookie = myCookies[i];
+				console.log(currentCookie);
+				
+			}
 			
 		</script>
 	</body>
