@@ -37,16 +37,30 @@
 			var theRest = [];
 
             /*For every item in my list, check its shape.
-			*If it's round, add to Faves; otherwise add to theRest
+			*If it's square, add to Faves; otherwise add to theRest
 			*/
 			
 			for (var i=0; i<4; i++){
 				console.log(i);
 				var currentCookie = myCookies[i];
-				console.log(currentCookie);
+				//console.log(currentCookie);
 				
-			}
-			
+				if(currentCookie.shape == "square"){
+					
+					console.log(currentCookie);
+					//Because shape is square add the currentCookie
+					//to myFaves list
+					myFaves.push(currentCookie);
+				}else{
+					//otherwise, add the currentCookie to
+					//theRest list
+					theRest.push(currentCookie);
+				} //this is the end of my if/selse statement
+				
+	
+			} //this is the end of my for loop
+			console.log(myFaves);
+			console.log(theRest);
 		</script>
 	</body>
 </html>
