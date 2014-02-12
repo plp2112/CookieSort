@@ -8,7 +8,7 @@
 	<body>
 		<h1>Movie List</h1>
 		<script>
-			/*The purpose of this program is to select all the action movies from a list of movie objects
+			/*The purpose of this program is to select all the romantic comedies from a list of movie objects
 			* and put them in their own list. THe remaining movies will also be put in their own list
 			*/
 
@@ -33,6 +33,23 @@
 			}];
 
 			console.log(MovieList);
+			
+			//These are the lists I will sort my movies into
+			var girlyMovies = [];
+			var theRest = [];
+			
+			/*For every item in my list, check its genre.
+			 * If it's romcom, add to girlyMovies; otherwise add to theRest
+			 */ 
+			
+			for (var i=0; i<MovieList.length; i++){
+				console.log(i);
+				var currentMovie = MovieList[i];
+				console.log(currentMovie);
+				
+				
+				
+			}
 			
 			
 		</script>
