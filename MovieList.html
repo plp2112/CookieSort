@@ -32,7 +32,7 @@
 
 			}];
 
-			console.log(MovieList);
+			//console.log(MovieList);
 			
 			//These are the lists I will sort my movies into
 			var girlyMovies = [];
@@ -45,12 +45,23 @@
 			for (var i=0; i<MovieList.length; i++){
 				console.log(i);
 				var currentMovie = MovieList[i];
-				console.log(currentMovie);
+				//console.log(currentMovie);
 				
+				if(currentMovie.genre == "romcom"){
+					
+					console.log(currentMovie);
+					//Because genre is romcom add the currentMovie
+					//to girlyMovies list
+					girlyMovies.push(currentMovie);
+				}else{
+					//otherwise, add the currentMovie to
+					//theRestlist
+					theRest.push(currentMovie);
+				}//this is the end of my if/else statement
 				
-				
-			}
-			
+			}//this is the end of my for loop
+			console.log(girlyMovies);
+			console.log(theRest);
 			
 		</script>
 
